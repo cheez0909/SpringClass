@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/BookMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/SceduleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex01/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex02/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex02/StudentMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex03/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex03/AnimalMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.gitexam/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/target/classes/org/java0502/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/target/test-classes/org/java0502/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="11월 30일 수업 정리 - README.md 파일 경로 이동" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +47,10 @@
       <recent name="D:\dani\2. 서블릿과 JSP\exam02\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dani\2. 서블릿과 JSP\exam02" />
+      <recent name="D:\dani\2. 서블릿과 JSP\exam02\src" />
       <recent name="D:\dani\2. 서블릿과 JSP\exam02\src\main" />
+      <recent name="D:\dani\2. 서블릿과 JSP\exam02\src\main\java" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +62,29 @@
       <option name="presentableId" value="Default" />
       <updated>1701306793706</updated>
     </task>
+    <task id="LOCAL-00001" summary="11월 30일 수업 정리">
+      <option name="closed" value="true" />
+      <created>1701330810311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701330810311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="11월 30일 수업 정리 - README.md 파일 경로 이동">
+      <option name="closed" value="true" />
+      <created>1701331044074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701331044074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="11월 30일 수업 정리" />
+    <MESSAGE value="11월 30일 수업 정리 - README.md 파일 경로 이동" />
+    <option name="LAST_COMMIT_MESSAGE" value="11월 30일 수업 정리 - README.md 파일 경로 이동" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
