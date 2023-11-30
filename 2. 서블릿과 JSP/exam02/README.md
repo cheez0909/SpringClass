@@ -79,7 +79,7 @@ public class StudentMain {
 #### ✅ 스택
 - LIFO : 후입선출 구조
 - 나중에 할당된 메모리를 먼저 해제한다.
-- ![img.png](java/ex01/img.png)
+- ![img.png](src/main/java/ex01/img.png)
 > 즉, `add()`함수가 `main` 다음으로 실행되지만 먼저 해제된다.
 
 <br>
@@ -105,7 +105,7 @@ S2 : 1324119927
 
 <br>
 
-![img_4.png](java/ex01/img_4.png)
+![img_4.png](src/main/java/ex01/img_4.png)
 > 즉, 클래스는 참조 자료형 이다.
 
 - 메모리구조 : 데이터, 스택, 힙
