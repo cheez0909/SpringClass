@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="11월 30일 수업 정리 - README.md 파일 경로 이동" />
+    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="12월 1일일 수업 정리 - 롬복 라이브러리 끝~!">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/AnimalMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/BookMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ex04/StudentMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/app/src/main/java/exam03/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/app/src/test/java/exam03/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam03/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -24,9 +53,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2YsGIUTt3L5t4jLqxZtPcPpPt17" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "reply",
-    "last_opened_file_path": "D:/dani/2. 서블릿과 JSP/exam02/src/main/java",
+    "last_opened_file_path": "D:/dani/2. 서블릿과 JSP/exam03",
     "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
@@ -84,7 +113,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11월 30일 수업 정리" />
     <MESSAGE value="11월 30일 수업 정리 - README.md 파일 경로 이동" />
-    <option name="LAST_COMMIT_MESSAGE" value="11월 30일 수업 정리 - README.md 파일 경로 이동" />
+    <MESSAGE value="12월 1일일 수업 정리 - 롬복 라이브러리 끝~!" />
+    <option name="LAST_COMMIT_MESSAGE" value="12월 1일일 수업 정리 - 롬복 라이브러리 끝~!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

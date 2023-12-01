@@ -26,6 +26,7 @@ ___
    - @AllArgsConstructor : 모든 필드에 자동 부여
  - `@NonNull` : not null
  - `@With` : setter의 불변 클래스
+ - `@Builder` : 
 
 <br>
 
