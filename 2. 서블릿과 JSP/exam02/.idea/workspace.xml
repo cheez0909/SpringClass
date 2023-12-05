@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="12월 1일일 수업 정리 - 롬복 라이브러리 끝~!" />
+    <list default="true" id="aab759d6-77d6-47c4-932e-5bed3943e010" name="Changes" comment="12월 1일일 수업 정리 - 롬복 라이브러리 끝~!">
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/common/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/common/exceptions/BadRequesetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/JoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/JoinValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam04/src/main/java/filters/CommonRequestWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam04/src/main/java/filters/CommonRequestWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main01.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "reply",
-    "last_opened_file_path": "D:/dani/2. 서블릿과 JSP/exam03",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reply&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dani/2. 서블릿과 JSP/exam03&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dani\2. 서블릿과 JSP\exam02\src\main\java" />

@@ -42,4 +42,4 @@ ___
 <br>
 
 
-https://velog.io/@dani0817/Maven-maven%EC%9C%BC%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0
+[블로그 정리] (https://velog.io/@dani0817/Maven-maven%EC%9C%BC%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)
