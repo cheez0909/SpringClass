@@ -29,7 +29,7 @@ public class AppCtx3 {
         return new JoinValidator();
     }
 
-    // @Bean
+    @Bean
     // 빈으로 설정하지 않고 MemberListService에 @Autowired도 하지 않으면 NPE발생
     // 빈으로 설정 후 @Autowired도 하지 않으면 NPE발생
     // 빈으로 설정하지 않고 @Autowired만 할 경우 NoSuchElementException: No value present 발생
