@@ -3,13 +3,17 @@ package models.member;
 import common.Validator;
 import common.exceptions.BadRequesetException;
 import common.validator.RequiredValidator;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /*
 * 유효성 검사
 * */
 public class JoinValidator implements Validator<Member>, RequiredValidator {
 
+    @Autowired
     private MemberDao memberDao;
+
+    public JoinValidator() {}
 
     public JoinValidator(MemberDao memberDao){
         this.memberDao = memberDao;

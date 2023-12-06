@@ -8,15 +8,20 @@ import java.util.Map;
 public class MemberDao {
     private static Map<String, Member> memberMap  = new HashMap<>();
 
+
     public void register(Member member){
         memberMap.put(member.getUserId(), member);
     }
+
     public boolean exists(String userId){
         return memberMap.containsKey(userId);
     }
 
     public List<Member> getList(){
         return new ArrayList<>(memberMap.values());
+    }
+    public Member getOne(String id){
+        return memberMap.get(id);
     }
 
 }
