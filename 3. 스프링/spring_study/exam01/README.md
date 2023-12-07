@@ -1,5 +1,8 @@
-[1. 예외 처리](#1-예외-처리runtimeexception-vs-compileexception)
-
+[1. 예외 처리](#1-예외-처리runtimeexception-vs-compileexception)<br>
+[2. isblank() vs isempty()](#2-isblank-vs-isempty)<br>
+[3. 유효성 검사](#3-유효성-검사)<br>
+[4. 싱글톤 패턴](#4-싱글톤-패턴)<br>
+[5. 의존성 주입(DI)](#5-의존성-주입di-객체조립기)<br>
 
 
 ### spring-context
@@ -29,7 +32,7 @@ ___
 <br>
 <br>
 
-### 2-1. 예외 처리 구문
+### 1-3. 예외 처리 구문
 ```
 try{
     예외가 발생할 가능성이 있는 코드
@@ -99,7 +102,7 @@ public class JoinValidator implements Validator<Member>, RequiredValidator {
 <br>
 <br>
 
-### 5. 싱글톤 패턴
+### 4. 싱글톤 패턴
 #### 💾 ServiceManager 
 ```java
 private static ServiceManager instance = null;
@@ -112,10 +115,14 @@ public static ServiceManager getInstance(){
 }
 ```
 
+
+
+[블로그 정리](https://velog.io/@dani0817/Spring-%EA%B8%B0%EB%B3%B8-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)
+
 <br>
 <br>
 
-### 6. 의존성 주입(DI) [객체조립기]
+### 5. 의존성 주입(DI) [객체조립기]
 #### 📂`models`  > 📂`member`  > 💾 `ServiceManager`
 ```java
 public class ServiceManager {
@@ -153,3 +160,5 @@ public class ServiceManager {
 ```
 > 통제 가능성을 열기 위해서, 변경이 용이함<br>
 > 파일마다 코드를 변경할 필요 없이 `ServiceManager`파일만 수정하면 된다.
+
+[블로그 정리](https://velog.io/@dani0817/Spring-%EA%B8%B0%EB%B3%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94%EA%B3%BC-%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84-%EC%9E%90%EB%8F%99-%EC%A3%BC%EC%9E%85%ED%95%98%EA%B8%B0)

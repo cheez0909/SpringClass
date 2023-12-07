@@ -60,6 +60,10 @@ ___
 
 <br>
 
+[블로그 정리](https://velog.io/@dani0817/Spring-%EA%B8%B0%EB%B3%B8-%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84-%EC%9E%90%EB%8F%99-%EC%A3%BC%EC%9E%85)
+
+<br>
+
 #### 📝2-1. 자바 표준 애너테이션
 `@Inject` -> 의존성 자동 주입<br>
 `@Resource` -> 의존성 자동 주입
@@ -69,3 +73,17 @@ ___
 
 ### 4. 컴포넌트 스캔
 ### 1. 📂config > 💾 AppCtx4, Main04
+___
+```java
+@Configuration
+@ComponentScan("models")
+public class AppCtx4 {
+
+}
+```
+- `@ComponentScan("models")` : `models` 내부 클래스를 스캔하여 자동으로 스프링 빈으로 등록해줌
+
+<br>
+
+[블로그 정리](https://velog.io/@dani0817/Spring-%EA%B8%B0%EB%B3%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94%EA%B3%BC-%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84-%EC%9E%90%EB%8F%99-%EC%A3%BC%EC%9E%85%ED%95%98%EA%B8%B0)
+
