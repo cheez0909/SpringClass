@@ -4,10 +4,12 @@ import common.Validator;
 import common.exceptions.BadRequesetException;
 import common.validator.RequiredValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /*
 * 유효성 검사
 * */
+@Component
 public class JoinValidator implements Validator<Member>, RequiredValidator {
 
     @Autowired

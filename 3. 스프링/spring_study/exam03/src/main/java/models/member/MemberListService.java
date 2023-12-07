@@ -2,6 +2,7 @@ package models.member;
 
 import io.micrometer.common.lang.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -9,22 +10,25 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberListService {
     @Autowired
     private MemberDao memberDao;
 
-    // private Optional<DateTimeFormatter> dateTimeFormatter;
-    private DateTimeFormatter dateTimeFormatter;
-    // 자동 주입대상이 없을 경우 메서드 자체가 호출되지 않음
+    // @Autowired
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+
+
+// 자동 주입대상이 없을 경우 메서드 자체가 호출되지 않음
 //    @Autowired(required = false)
 //    public void setDateTimeFormatter(Optional<DateTimeFormatter> dateTimeFormatter) {
 //        this.dateTimeFormatter = dateTimeFormatter;
 //    }
 
-    @Autowired(required = false)
-    public void setDateTimeFormatter(DateTimeFormatter dateTimeFormatter) {
-        this.dateTimeFormatter = dateTimeFormatter;
-    }
+
+//    public void setDateTimeFormatter(@Nullable DateTimeFormatter dateTimeFormatter) {
+//        this.dateTimeFormatter = dateTimeFormatter;
+//    }
 
     public MemberListService(){
     }
@@ -47,7 +51,8 @@ public class MemberListService {
         List<Member> list = memberDao.getList();
         for(Member num : list){
 //            DateTimeFormatter formatter = dateTimeFormatter.orElse(null);
-            num.setRegDtSt(num.getRegDt().format(dateTimeFormatter));
+//            num.setRegDtSt(num.getRegDt().format(dateTimeFormatter));
+            num.setRegDtSt(dateTimeFormatter.format(num.getRegDt()));
         }
         list.stream().forEach(x -> System.out.println(x));
     }
