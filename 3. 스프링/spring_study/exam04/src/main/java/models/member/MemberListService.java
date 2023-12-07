@@ -1,5 +1,6 @@
 package models.member;
 
+import config.Manual;
 import io.micrometer.common.lang.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,21 +17,20 @@ public class MemberListService {
     private MemberDao memberDao;
 
     // @Autowired
-    // 멤버 필드 & 스프링 빈으로 등록하지 않았음
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy-MM-dd HH:MM:SS");
+    // private Optional<DateTimeFormatter> dateTimeFormatter;
 
-
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy-MM-dd HH:MM");
 // 자동 주입대상이 없을 경우 메서드 자체가 호출되지 않음
 //    @Autowired(required = false)
 //    public void setDateTimeFormatter(Optional<DateTimeFormatter> dateTimeFormatter) {
 //        this.dateTimeFormatter = dateTimeFormatter;
 //    }
 
-
-    @Autowired(required = false)
-    public void setDateTimeFormatter(@Nullable DateTimeFormatter dateTimeFormatter) {
-        this.dateTimeFormatter = dateTimeFormatter;
-    }
+    // @Autowired
+//    @Autowired(required = false)
+//    public void setDateTimeFormatter(/*@Nullable*/  DateTimeFormatter dateTimeFormatter) {
+//        this.dateTimeFormatter = dateTimeFormatter;
+//    }
 
     public MemberListService(){
     }
@@ -51,12 +51,12 @@ public class MemberListService {
     // String -> LocalDateTime으로 타입변환이 되지 않는다.
     public void getList(){
         List<Member> list = memberDao.getList();
-        for(Member num : list) {
-            if (dateTimeFormatter != null) {
+        for(Member num : list){
+//            if(dateTimeFormatter!=null) { // 널 체크를 안 할 경우 오류가 발생함
 //            DateTimeFormatter formatter = dateTimeFormatter.orElse(null);
-//            num.setRegDtSt(num.getRegDt().format(dateTimeFormatter));
+            num.setRegDtSt(num.getRegDt().format(dateTimeFormatter));
                 num.setRegDtSt(dateTimeFormatter.format(num.getRegDt()));
-            }
+//            }
         }
         list.stream().forEach(x -> System.out.println(x));
     }
