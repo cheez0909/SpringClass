@@ -14,11 +14,20 @@ java{
 }
 
 dependencies {
+
+    def spring_version = "6.1.1"
+
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
     implementation 'com.oracle.database.nls:orai18n:23.3.0.23.09'
 
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+
+    implementation "org.springframework:spring-context:$spring_version"
+    implementation "org.springframework:spring-jdbc:$spring_version"
+
+    implementation 'org.apache.tomcat:tomcat-jdbc:11.0.0-M14'
 }
 
 test {

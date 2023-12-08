@@ -19,3 +19,13 @@ select문 -> 쿼리문
 ResultSet -> 위치를 가리킴
 이동 -> 이동 하면서 값을 불러옴
 
+
+
+spring-jdbc:JDBC API 객선 + 커넥션 풀
+ex) DriverManager -> 커넥션 X
+DataSource -> 커넥션 풀 O
+
+( 톰캣-jdbc / HikariCP )
+커넥션 풀
+- 반응성, 성능 향상의 효과
+- 오랜시간 연결이 안되어 있으면 DB와 연결 객체의 연결이 끊어짐 -> 오류
