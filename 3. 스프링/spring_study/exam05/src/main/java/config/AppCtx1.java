@@ -1,20 +1,21 @@
 package config;
 
-import aop.*;
+import aop.Add;
+import aop.Calculator;
+import aop.CalculatorAdd;
+import aop.Reg;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+import java.lang.reflect.Proxy;
 
 
 @Configuration
-@EnableAspectJAutoProxy // 기존 AppCtx를 냅두고 새로운 객체가 한 번 만들어지고 코드가 추가됨
-// 프록시로 AppCtx를 만듦
-// 한 번 컴파일 되면 못 바꿈
-// 기존꺼에 + 알파 한 것을 프록시로 추가함
-public class AppCtx {
+@EnableAspectJAutoProxy(proxyTargetClass = true) // 구현체 기반으로 바뀜
+public class AppCtx1 {
     @Bean
-    public Calculator calculator(){
+    public Reg reg(){
         return new Reg();
     }
 
