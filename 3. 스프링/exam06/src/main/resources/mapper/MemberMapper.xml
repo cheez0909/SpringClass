@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.MemberMapper">
+    <select id="getMember" resultType="models.member.Member">
+        <bind name="userId" value="'%' + _parameter.getUserId() + '%'" />
+        <if test="userName != null">
+            <bind name="userName" value="'%' + _parameter.getUserName() + '%'" />
+        </if>
+        SELECT * FROM MEMBER
+        <trim prefix="WHERE" suffixOverrides="AND | OR">
+            <if test="userId!=null">
+                USER_ID LIKE #{userId} AND
+            </if>
+            <if test="userName!=null">
+                USER_NAME LIKE #{userName}
+            </if>
+        </trim>
+    </select>
+    <insert id="register">
+        <!--keyProperty="userNo"에 value가 담김-->
+        <selectKey keyProperty="userNo" order="BEFORE" resultType="long">
+            SELECT SEQ_MEMBER.nextval FROM DUAL
+        </selectKey>
+        INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NAME, EMAIL)
+        VALUES (#{userNo}, #{userId}, #{userPw}, #{userName}, #{email})
+    </insert>
+    <update id="update">
+        UPDATE MEMBER
+        <set>
+            <if test="userPw!=null">
+                USER_PW = #{userPw},
+            </if>
+            <if test="userName!=null">
+                USER_NAME=#{userName},
+            </if>
+            <if test="email!=null">
+                EMAIL=#{email}
+            </if>
+        </set>
+        WHERE USER_ID = #{userId}
+    </update>
+    <delete id="delete">
+        DELETE FROM MEMBER WHERE USER_ID=#{userId}
+    </delete>
+</mapper>
