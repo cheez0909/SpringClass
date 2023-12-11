@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5c90d9b-a4e4-4d6c-b26a-921c3afbbaf1" name="Changes" comment="12월 4일 수업">
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/common/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/common/exceptions/BadRequesetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/JoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/JoinValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/models/member/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filters/CommonRequestWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filters/CommonRequestWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3. 스프링/spring_study/exam01/src/main/java/main/Main01.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.servlet/jakarta.servlet-api/6.0.0/4a67061af80d50fd8fba23298f2be1911008cb37/jakarta.servlet-api-6.0.0-sources.jar!/jakarta/servlet/http/HttpServletRequestWrapper.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YvA2e7Wx8KqvdbqLRdOidAfz1H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reply&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dani\2. 서블릿과 JSP\exam04\src\main\webapp\WEB-INF\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="filters" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat10" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="C:\Users\admin\.SmartTomcat\exam04\exam04.main" />
+      <option name="contextPath" value="/exam04" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="port" value="3000" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.16" />
+          <option name="path" value="$PROJECT_DIR$/../../apache-tomcat-10.1.16" />
+          <option name="version" value="10.1.16.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="exam04.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5c90d9b-a4e4-4d6c-b26a-921c3afbbaf1" name="Changes" comment="" />
+      <created>1701395474915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701395474915</updated>
+    </task>
+    <task id="LOCAL-00001" summary="12월 1일 수업">
+      <option name="closed" value="true" />
+      <created>1701419946852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701419946852</updated>
+    </task>
+    <task id="LOCAL-00002" summary="12월 4일 수업">
+      <option name="closed" value="true" />
+      <created>1701675190711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701675190711</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="12월 1일 수업" />
+    <MESSAGE value="12월 4일 수업" />
+    <option name="LAST_COMMIT_MESSAGE" value="12월 4일 수업" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
