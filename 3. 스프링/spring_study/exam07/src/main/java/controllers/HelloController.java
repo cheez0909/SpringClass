@@ -13,10 +13,11 @@ public class HelloController {
 //        System.out.println(name);
 //        return "hello";
 //    }
-
     @GetMapping("/hello")
     public ModelAndView hello(){
         ModelAndView mv = new ModelAndView();
-//        mv.addObject("message", )
+        mv.addObject("message", "안녕하세요"); // 담을 객체
+        mv.setViewName("hello"); // 출력할 뷰 네임, /WEB-INF/templates/hello.jsp
+        return mv;
     }
 }
