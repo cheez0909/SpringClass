@@ -7,23 +7,23 @@
 ## 서버 연결하기
 ___
 #### 1. 톰캣 플러그인 설치
-![img.png](img.png)
+![img.png](images/img.png)
 
 <br>
 
 #### 2. 폴더 생성
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 <br>
 
 #### 3. Edit Configuration
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![img_2.png](images/img_2.png)
+![img_3.png](images/img_3.png)
 
 <br>
 
 #### 4. index.jsp 파일 생성
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 > 서버가 연결되었다!
 
@@ -52,13 +52,13 @@ ___
 #### ✅ `<% %>`스클립틀릿 내부에 입력되는 값은 `ex01.java` 파일 내의 `service`내의 `지역 변수`로 선언됨<br>
 #### 👉 메서드를 선언할 수 없다 (`지역 변수`로 선언되기 때문)
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 #### ✅ `<%! %>` 선언문은 `ex01.java` 파일 내의 `전역 변수`로 선언됨
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 #### ✅ `<%= %>` 표현식은 `ex01.java` 파일 내의 `service`내의 `out.print();`로 표현됨
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 <br>
 <br>
@@ -67,7 +67,7 @@ ___
 ___
 
 #### ✅ `<% %>`스클립틀릿 내부에 입력되는 값은 `ex02.java` 파일 내의 `service`내의 `지역 변수`로 선언됨<br>
-![img_11.png](img_11.png)
+![img_11.png](images/img_11.png)
 
 <br>
 <br>
@@ -214,21 +214,21 @@ doGet()
 ### 📝 3. `<jsp:forward page="경로" />`와 `<jsp:include file="경로" />`
 #### 📂 jspex > 💾 ex05.jsp
 ___
-![img_14.png](img_14.png)
+![img_14.png](images/img_14.png)
 > 페이지 이동시 location 있어야함
 
 <br>
 
 #### ✅ `<jsp:forward page="경로" />`<br>
-![img_15.png](img_15.png)
+![img_15.png](images/img_15.png)
 > 결과물을 버퍼에 담다가 `<jsp:forward page="경로">`를 만난 후 버퍼를 비우고
-다시 담음 -> 버퍼가 교체되는 것(버퍼의 치환)![img_16.png](img_16.png)
+다시 담음 -> 버퍼가 교체되는 것(버퍼의 치환)![img_16.png](images/img_16.png)
 
 <br>
 
 
 #### ✅`<jsp:include file="경로" />`
-> 버퍼의 통제 기능 -> 버퍼를 담는다 ![img_17.png](img_17.png)
+> 버퍼의 통제 기능 -> 버퍼를 담는다 ![img_17.png](images/img_17.png)
 
 
 #### ✨ `View`에 `jsp`를 템플릿으로 사용함
@@ -281,5 +281,5 @@ ___
 #### 📂 `filters` > 💾 `ex01`, `ex02`, `CommonFilter`, `CommonRequestWrapper`, `LoginServlet`
 ___
 
-![img_18.png](img_18.png)
+![img_18.png](images/img_18.png)
 #### ✅ `LoginServlet` -> 웹 컴포넌트(필터를 통해 최종적으로 호출되는 메서드)
