@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.jkiss.dbeaver.ui.extra.feature"
+      label="%featureName"
+      version="23.3.0.202312031432"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <plugin
+         id="org.jkiss.dbeaver.ext.ui.locks"
+         download-size="45"
+         install-size="86"
+         version="1.0.165.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.tasks.ui"
+         download-size="105"
+         install-size="254"
+         version="1.0.98.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.tasks.ui.view"
+         download-size="144"
+         install-size="399"
+         version="1.0.69.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.tasks.native.ui"
+         download-size="54"
+         install-size="112"
+         version="1.0.98.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.tasks.sql.ui"
+         download-size="48"
+         install-size="96"
+         version="1.0.86.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.ext.import_config"
+         download-size="76"
+         install-size="135"
+         version="2.1.183.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.ext.format.sqlworkbenchj"
+         download-size="17"
+         install-size="26"
+         version="1.0.127.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.cmp.simple.ui"
+         download-size="38"
+         install-size="71"
+         version="6.0.116.202312031432"
+         unpack="false"/>
+
+   <plugin
+         id="org.jkiss.dbeaver.ui.dashboard"
+         download-size="186"
+         install-size="437"
+         version="1.0.117.202312031432"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="799b57c9-9bf2-4831-b48d-f78015b263ae" name="Changes" comment="12월 6일 수업 - README.md 파일 정리_1">
+      <change afterPath="$PROJECT_DIR$/../exam04/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/exceptions/BadRequesetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/validator/RequiredValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/config/Manual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/main/Main04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/JoinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/JoinValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/MemberListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/sub/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/MemberListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/MemberListService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cheez0909&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f3b3ce60-89ec-4d5a-a956-f435b3035631" />
+        <option name="url" value="https://github.com/cheez0909/SpringClass.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Z9O9saQu73XjwQGniFZorZBQD0" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reply&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/Enums&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dani\3. 스프링\spring_study\exam03\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dani\3. 스프링\spring_study\exam03\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main" />
+      <recent name="config" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="799b57c9-9bf2-4831-b48d-f78015b263ae" name="Changes" comment="" />
+      <created>1701830681676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701830681676</updated>
+    </task>
+    <task id="LOCAL-00001" summary="12월 6일 수업">
+      <option name="closed" value="true" />
+      <created>1701853500017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701853500017</updated>
+    </task>
+    <task id="LOCAL-00002" summary="12월 6일 수업">
+      <option name="closed" value="true" />
+      <created>1701853515370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701853515370</updated>
+    </task>
+    <task id="LOCAL-00003" summary="12월 6일 수업">
+      <option name="closed" value="true" />
+      <created>1701912414192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701912414192</updated>
+    </task>
+    <task id="LOCAL-00004" summary="12월 6일 수업 - README.md 파일 정리_1">
+      <option name="closed" value="true" />
+      <created>1701913227406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701913227406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="12월 6일 수업" />
+    <MESSAGE value="12월 6일 수업 - README.md 파일 정리_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="12월 6일 수업 - README.md 파일 정리_1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
