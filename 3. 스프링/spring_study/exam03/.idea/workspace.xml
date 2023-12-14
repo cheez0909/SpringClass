@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="799b57c9-9bf2-4831-b48d-f78015b263ae" name="Changes" comment="12월 6일 수업 - README.md 파일 정리_1">
-      <change afterPath="$PROJECT_DIR$/../exam04/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/exceptions/BadRequesetException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/common/validator/RequiredValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/config/Manual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/main/Main04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/JoinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/JoinValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/MemberListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam04/src/main/java/models/member/sub/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/MemberListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/MemberListService.java" afterDir="false" />
+    <list default="true" id="799b57c9-9bf2-4831-b48d-f78015b263ae" name="Changes" comment="12월 13일">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +113,22 @@
       <option name="project" value="LOCAL" />
       <updated>1701913227406</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="12월 13일">
+      <option name="closed" value="true" />
+      <created>1702454746113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702454746113</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="12월 6일 수업" />
     <MESSAGE value="12월 6일 수업 - README.md 파일 정리_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="12월 6일 수업 - README.md 파일 정리_1" />
+    <MESSAGE value="12월 13일" />
+    <option name="LAST_COMMIT_MESSAGE" value="12월 13일" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

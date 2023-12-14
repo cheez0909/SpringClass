@@ -1,10 +1,13 @@
 package configs;
 
+import common.Utils;
 import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring6.SpringTemplateEngine;
@@ -65,7 +68,7 @@ public class MvcConfig implements WebMvcConfigurer {
         templateEngine.addDialect(new Java8TimeDialect());
         // Date time API(java 타임 패키지)
         templateEngine.addDialect(new LayoutDialect());
-        //
+        // 레이아웃 기능 추가
         return templateEngine;
     }
 
@@ -86,5 +89,38 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.viewResolver(thymeleafViewResolver());
+    }
+
+    /**
+     * 메세지 설정 : 브라우저에서 언어 설정 시
+     * html에서 메세지 표현식으로 표현되어 있는 부분이
+     * 해당 언어로 변경됨
+     */
+    @Bean
+    public MessageSource messageSource(){
+        ResourceBundleMessageSource ms = new ResourceBundleMessageSource();
+        ms.setDefaultEncoding("UTF-8");
+        // resource 파일 내에
+        // properties 파일 확장자 제거 후 입력
+        ms.setBasenames("message.commons");
+        // 공통성, 유효성, 에러 메세지를 주로 넣음
+
+        return ms;
+    }
+
+    @Bean
+    public Utils utils(){
+        return new Utils();
+    }
+
+    /**
+     * 컨트롤러를 만들지 않고
+     * 페이지 연동 (ex. 이벤트 페이지나 회사소개등등... 굳이 컨트롤러가 필요 없을 경우)
+     * 직접 템플릿을 연동했을 경우
+     * 모델 추가하기 불가능함 / 값을 못 넘김
+     */
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("main/index");
     }
 }
