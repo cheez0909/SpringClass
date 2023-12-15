@@ -133,3 +133,66 @@ th:src="@{...}"
 타임리프 페이지 레이아웃
 th:replace
 th:fragment
+
+자바 스크립트가 무겁기 때문에 layouts > common.html 파일 처럼 공통 부분을 빼놓고
+필요할 경우 템플릿을 상속받아서 이용한다.
+
+템플릿을 컨트롤러없이 Config파일에서 바로 연결할 경우
+model을 사용할 수 없다.
+이런 경우 내용치환기능을 이용할 수 있다.
+![img_7.png](img_7.png)
+
+@RequestMapping -> 모든 요청에 대한 매핑(Get, Post...) : 공통 URL 패턴 주로 정의
+
+th:field - 입력 형태에 따라 value, checked, selected를 알아서 선택하거나 값을 입력
+
+뷰에서 사용하는 데이터를 속성이라함
+data = model
+
+@ModelAttribute => 현재 컨트롤러 모든 url에서 공유할 데이터 설정시 사용
+
+redirect, forward : 페이지 이동
+요청 메서드의 반환값 : redirect:주소
+RequestDispatcher
+    forward -> 기존 버퍼를 취소하고 forward
+    include -> 기존 버퍼에 포함시켜서 
+    <jsp:forward page="...">
+ => forward flush 하게됨
+
+
+커맨드객체를 모델에 담아서 넘겨줌.......
+
+
+커맨드 객체 검증
+1) Validator 인터페이스
+
+
+2) Errors
+    reject("에러코드") - 메세지 코드로 에러코드가 등록된 경우 -> 출력
+    reject("에러코드", "기본 메세지") - 에러코드가 메세지로 등록되지 않은 경우 기본 메세지
+
+    -- 특정 필드에 해당하는 에러 메세지 처리 --
+    rejectValue("필드명", "에러코드");
+    rejectValue("필드명", "에러코드", "기본메세지");
+
+    boolean hasErrors() : reject 또는 rejectValue가 한개라도 호출 되면 -> true
+
+3) ValidationUtils
+
+에러 코드에 해당하는 메시지 코드를 찾는 규칙
+- 에러코드 + "." + 
+
+- 에러 출력 -> #fields.errors("필드명");
+
+ValidationUtils
+ - .rejectvalueif
+ - .reject
+![img_8.png](img_8.png)
+
+
+Bean Validation
+ - Bean Validation API `implementation 'jakarta.validation:jakarta.validation-api:3.0.2'` 
+-> 구현체가 필요함 (Hibernate Validator를 사용함) / API는 구현체가 반드시 필요함
+ - Hibernate Validator
+
+![img_9.png](img_9.png)

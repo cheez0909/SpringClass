@@ -102,7 +102,7 @@ public class MvcConfig implements WebMvcConfigurer {
         ms.setDefaultEncoding("UTF-8");
         // resource 파일 내에
         // properties 파일 확장자 제거 후 입력
-        ms.setBasenames("message.commons");
+        ms.setBasenames("message.commons", "message.validations");
         // 공통성, 유효성, 에러 메세지를 주로 넣음
 
         return ms;

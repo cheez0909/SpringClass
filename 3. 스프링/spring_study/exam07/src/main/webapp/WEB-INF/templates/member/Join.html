@@ -3,6 +3,74 @@
       layout:decorate="~{layouts/common}">
 
 <main layout:fragment="content">
-    <h1>회원가입</h1>
+    <h1 th:text="#{회원가입}">회원가입</h1>
+    [[${hobbies}]]
+    [[${requestJoin}]]
+    <form method="post" th:action="@{/member/join}" th:object="${requestJoin}">
+        <dl>
+            <dt th:text="#{아이디}"></dt>
+            <dd>
+                <input type="text" name="id" th:field="*{id}"/>
+                <div th:each="err : ${#fields.errors('id')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{비밀번호}"></dt>
+            <dd>
+                <input type="password" name="pw" th:field="*{pw}"/>
+                <div th:each="err : ${#fields.errors('pw')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{비밀번호_확인}"></dt>
+            <dd>
+                <input type="password" name="pwcheck" th:field="*{pwcheck}"/>
+                <div th:each="err : ${#fields.errors('pwcheck')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{회원명}"></dt>
+            <dd>
+                <input type="text" name="name" th:field="*{name}"/>
+                <div th:each="err : ${#fields.errors('name')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{이메일}"></dt>
+            <dd>
+                <input type="text" name="email" th:field="*{email}"/>
+                <div th:each="err : ${#fields.errors('email')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+
+        <!--        <dl>-->
+        <!--            <dt th:text="#{취미}"></dt>-->
+        <!--            <dd>-->
+        <!--                <th:block th:each="hobby, status: ${hobbies}">-->
+        <!--                    <input type="checkbox" name="hobby" th:value=${hobby} th:id="${'hobby' + status.count}" th:field="*{hobby}">-->
+        <!--                    <label th:for="${'hobby' + status.count}" th:text="${hobby}"></label>-->
+        <!--                </th:block>-->
+        <!--            </dd>-->
+        <!--        </dl>-->
+
+        <!--        <dl>-->
+        <!--            <dt th:text="#{주소}"></dt>-->
+        <!--            <dd>-->
+        <!--                <input type="text" name="addr.zipcode" th:field="*{addr.zipcode}">-->
+        <!--                <input type="text" name="addr.address" th:field="*{addr.address}">-->
+        <!--                <input type="text" name="addr.addressSub" th:field="*{addr.addressSub}">-->
+        <!--            </dd>-->
+        <!--        </dl>-->
+        <div>
+            <input type="checkbox" name="agree" value="true" id="agree"}>
+            <label for="agree" th:text="#{회원가입_약관에_동의합니다.}"></label>
+            <div th:each="err : ${#fields.errors('agree')}" th:text="${err}"></div>
+        </div>
+        <button type="submit">가입하기</button>
+    </form>
 </main>
 </html>
