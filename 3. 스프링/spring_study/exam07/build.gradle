@@ -40,8 +40,17 @@ dependencies {
     implementation 'org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.3.0'
 
+    // 자바에서 지원하는 검증 api
     implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+    // 구현체
     implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+
+    // 스프링 테스트
+    testImplementation "org.springframework:spring-test:$spring_version"
+
+    // bcrypt : 비밀번호 해시
+    implementation 'org.mindrot:jbcrypt:0.4'
+
 
 }
 

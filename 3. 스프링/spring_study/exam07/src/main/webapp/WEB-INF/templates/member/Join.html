@@ -7,6 +7,8 @@
     [[${hobbies}]]
     [[${requestJoin}]]
     <form method="post" th:action="@{/member/join}" th:object="${requestJoin}">
+        <!-- reject 공통 에러 처리할 때 : 전체 화면에 나옴 -->
+<!--        <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>-->
         <dl>
             <dt th:text="#{아이디}"></dt>
             <dd>
@@ -66,7 +68,7 @@
         <!--            </dd>-->
         <!--        </dl>-->
         <div>
-            <input type="checkbox" name="agree" value="true" id="agree"}>
+            <input type="checkbox" name="agree" th:field="*{agree}" id="agree"><!--value="true" id="agree"-->
             <label for="agree" th:text="#{회원가입_약관에_동의합니다.}"></label>
             <div th:each="err : ${#fields.errors('agree')}" th:text="${err}"></div>
         </div>

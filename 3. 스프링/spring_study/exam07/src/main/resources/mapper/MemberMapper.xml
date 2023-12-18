@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.MemberMapper">
+    <insert id="register">
+        INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NAME, EMAIL)
+        VALUES (SEQ_MEMBER.nextval, #{userId}, #{userPw}, #{userName}, #{email})
+    </insert>
+    <select id="exist" resultType="int">
+        SELECT COUNT(*) FROM MEMBER WHERE USER_ID=#{userId}
+    </select>
+    <select id="get" resultType="models.member.Member">
+        SELECT * FROM MEMBER WHERE USER_ID=#{userId}
+    </select>
+</mapper>

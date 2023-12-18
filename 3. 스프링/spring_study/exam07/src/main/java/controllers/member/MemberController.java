@@ -3,10 +3,12 @@ package controllers.member;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import models.member.JoinService;
 import models.member.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -20,7 +22,7 @@ import java.util.List;
 public class MemberController {
 
     private final JoinValidator joinValidator;
-
+    private final JoinService joinService;
 //    @GetMapping("/member")
 //    public String join(){
 //        return "/member/Join";
@@ -34,6 +36,8 @@ public class MemberController {
      */
     @PostMapping("/join")
     // Errors errors도 매개변수에 추가 가능
+    // @Valid -> 커맨드 객체의 애너테이션 로직을 확인하고 싶을때
+    // @Valid -> 검증해달라는 뜻..
     public String joinPs(@Valid RequestJoin requestJoin, Errors errors, Model model){
         // 에러 객체는 커맨드 객체 뒤쪽에 위치해야한다.
 
@@ -44,6 +48,10 @@ public class MemberController {
         if(errors.hasErrors()){
             return "member/Join";
         }
+
+        // 회원 가입 처리
+        joinService.join(requestJoin);
+
 
         // 회원가입에 실패했을 때 기존 값이 날아가면 안되므로
         // 모델에 커멘드 객체를 담고 뷰에서 value값을 설정해준다
@@ -58,7 +66,9 @@ public class MemberController {
 
         // 출력 버퍼만 바뀜 주소이동이 아님
         // 데이터가 그대로 이동함
-        return "forward:/member/login";
+        // return "forward:/member/login";
+
+        return "redirect:/member/login";
     }
 
     /**
@@ -114,11 +124,17 @@ public class MemberController {
         for(int i=1; i<=10; i++){
             Member member = Member.builder()
                     .userNo(Long.valueOf(i)).userId("1234" + i)
-                    .userPw("1234").userNm("사용자01" + i)
+                    .userPw("1234").userName("사용자01" + i)
                     .regDt(LocalDateTime.now()).email("uesr01" + i + "@test.org").build();
             members.add(member);
         }
         model.addAttribute("members", members);
         return "member/list";
     }
+    /* 공통적인 validator 실행 시 joinValidator는 주석처리
+    @InitBinder
+    protected void initBinder(WebDataBinder binder){
+        binder.setValidator(joinValidator);
+    }
+     */
 }
