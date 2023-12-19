@@ -14,4 +14,20 @@
     <select id="get" resultType="models.member.Member">
         SELECT * FROM MEMBER WHERE USER_ID=#{userId}
     </select>
+    <!--메서드 이름 / 반환값-->
+    <select id="getList" resultType="models.member.Member">
+        <!--<![CDATA[ 내용 ]] 이 있어야 쿼리 내의 꺽쇄괄호를 데이터로 인식하지 않음-->
+        <![CDATA[
+        SELECT * FROM MEMBER
+        <where>
+            <if test="sdate != null">
+                REG_DT >= #{sdate}
+            </if>
+            <if test="edate != null">
+                REG_DT < #{edate}
+            </if>
+        </where>
+        ORDER BY REG_DT DESC
+        ]]>
+    </select>
 </mapper>

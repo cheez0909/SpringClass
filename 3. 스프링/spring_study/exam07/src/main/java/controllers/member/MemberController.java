@@ -1,9 +1,11 @@
 package controllers.member;
 
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import models.member.JoinService;
+import models.member.LoginService;
 import models.member.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +25,8 @@ public class MemberController {
 
     private final JoinValidator joinValidator;
     private final JoinService joinService;
+    private final LoginValidator loginValidator;
+    private final LoginService loginService;
 //    @GetMapping("/member")
 //    public String join(){
 //        return "/member/Join";
@@ -80,9 +84,11 @@ public class MemberController {
         return Arrays.asList("자바", "오라클", "JSP", "스프링");
     }
 
+    /**
+     * 커맨드 객체와 연결하고 검증하기
+     */
     @GetMapping("/login")
-    public String login(RequestJoin requestJoin, Model model){
-        model.addAttribute("requestJoin", requestJoin);
+    public String login(@ModelAttribute RequestLogin requestLogin){
         return "member/login";
     }
 
@@ -94,9 +100,17 @@ public class MemberController {
 //    }
 
     @PostMapping("/login")
-    public String loginPs(RequestLogin requestLogin){
-        System.out.println(requestLogin);
-        return "member/login";
+    public String loginPs(@Valid RequestLogin requestLogin, Errors errors){
+        loginValidator.validate(requestLogin, errors);
+
+        if(errors.hasErrors()){
+            return "member/login";
+        }
+        /**
+         * 로그인 처리
+         */
+        loginService.login(requestLogin);
+        return "redirect:/"; // 로그인 성공시 메인페이지로 이동
     }
 
     /**
@@ -137,4 +151,16 @@ public class MemberController {
         binder.setValidator(joinValidator);
     }
      */
+
+    /**
+     *로그아웃
+     * 세션은 개인데이터이기 때문에
+     * 로그아웃시 비워야 함 = 로그아웃 기능
+     */
+    // @RequestMapping -> 모든 요청을 받음
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate(); // 세션 비우기
+        return "redirect:/member/login"; // 로그인 페이지로 이동
+    }
 }

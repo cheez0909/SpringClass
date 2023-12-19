@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <header th:fragment="common">
-        <h1>사이트 상단!</h1>
+        <!--빈으로 경로 직접 입력-->
+        <th:block th:if="${@utils.isLogin()}">
+            <span th:text="${#messages.msg('LOGIN_MSG', session.member.userName, session.member.userId)}"></span>
+            <a th:href="@{/mypage}" th:text="#{마이페이지}"></a>
+            <a th:href="@{/member/logout}" th:text="#{로그아웃}"></a>
+        </th:block>
+        <th:block th:unless="${@utils.isLogin()}">
+            <a th:href="@{/member/join}" th:text="#{회원가입}"></a>
+            <a th:href="@{/member/login}" th:text="#{로그인}"></a>
+        </th:block>
     </header>
 </html>

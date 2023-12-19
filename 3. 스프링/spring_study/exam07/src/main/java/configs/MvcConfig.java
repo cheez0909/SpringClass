@@ -124,5 +124,38 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("main/index");
+        // *이 한개면 포함, *이 두개면 모든 하위 경로
+        // 마이페이지에 인가가 없으니, url로 접속이 가능함
+        // 인터셉터가 필요하다.
+        registry.addViewController("/mypage/**").setViewName("mypage/index");
+    }
+
+    /**
+     * 인터셉터 빈으로 등록
+     */
+    @Bean
+    public MemberOnlyInterceptor memberOnlyInterceptor(){
+        return new MemberOnlyInterceptor();
+    }
+
+    /**
+     * 어떤 범위에서 사용할 건지 url 등록
+     * 인가에 대한 구현은 다른 것으로 하기 때문에 인터셉터를 이용하지 않음
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(memberOnlyInterceptor())
+                .addPathPatterns("/mypage/**");
+
+        /**
+         * 사이트 전역에 정보 추가
+         */
+        registry.addInterceptor(commonInterceptor())
+                .addPathPatterns("/**");
+    }
+
+    @Bean
+    public CommonInterceptor commonInterceptor(){
+        return new CommonInterceptor();
     }
 }

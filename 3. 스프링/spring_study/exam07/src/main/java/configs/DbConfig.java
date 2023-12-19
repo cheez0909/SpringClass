@@ -8,11 +8,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @MapperScan("mapper")
 // 인터페이스만 만들어도 구현체가 만들어짐
 // java와 동일 경로 (리소스 내 mapper파일)로 설정
+@EnableTransactionManagement
 public class DbConfig {
 
     @Bean(destroyMethod = "close")

@@ -3,7 +3,25 @@
       layout:decorate="~{layouts/common}">
 
 <main layout:fragment="content">
-    <h1>로그인성공!</h1>
-<!--    [[${requestJoin.id}]] forward일때 출력 가능-->
+    <h1 th:text="#{로그인}"></h1>
+    <form method="post" th:action="@{/member/login}" th:object="${requestLogin}">
+        <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+        <dl>
+            <dt th:text="#{아이디}"></dt>
+            <dd>
+                <input type="text" name="userId" th:field="*{userId}">
+                <div th:each="err:${#fields.errors('userId')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt th:text="#{비밀번호}"></dt>
+            <dd>
+                <input type="password" name="userPw" th:field="*{userPw}">
+                <div th:each = "err : ${#fields.errors('userPw')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <button type="submit" th:text="#{로그인}"></button>
+    </form>
+    <!--    [[${requestJoin.id}]] forward일때 출력 가능-->
 </main>
 </html>

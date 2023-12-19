@@ -10,9 +10,9 @@ viewResolver
 
 모든 요청 -> 서블릿(dispatcher)
 
-![img.png](img.png)
+![img.png](images/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 
 모든 요청(get/hello) -> DispatcherServler -> HadlerMapping 
@@ -50,7 +50,7 @@ Model -> 데이터용 객체 -> 추가 데이터는 EL식 변수 형태로 접�
    (== request.setAttribute(...))
 
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 컨트롤러와 상관없이 직접 접근이 가능하도록 설정할 것
 
 /mypage/** : /mypage 경로를 포함한 모든 하위 경로
@@ -88,7 +88,7 @@ URL변수 식, 요청 파라미터 쉽게 추사
 {id} - 경로 변수
 
 4) 선택 변수 식
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 th : object = "${객체}"
     *{속성명}
 <section> 태그 대신 사용
@@ -109,7 +109,7 @@ th:each -> 반복문
 - odd : 홀수행
 <c:forEach var="item" items="${...}" varStatus={status}>
 </c:forEach>
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 5)th:if, th:unless : 조건식
 th:if="${...}"식이 참일때 출력
@@ -127,7 +127,7 @@ th:src="@{...}"
 #fields.errors(...)
 #fields.globalErrors(...)
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 
 타임리프 페이지 레이아웃
@@ -140,7 +140,7 @@ th:fragment
 템플릿을 컨트롤러없이 Config파일에서 바로 연결할 경우
 model을 사용할 수 없다.
 이런 경우 내용치환기능을 이용할 수 있다.
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 @RequestMapping -> 모든 요청에 대한 매핑(Get, Post...) : 공통 URL 패턴 주로 정의
 
@@ -187,7 +187,7 @@ RequestDispatcher
 ValidationUtils
  - .rejectvalueif
  - .reject
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
 
 Bean Validation
@@ -195,16 +195,16 @@ Bean Validation
 -> 구현체가 필요함 (Hibernate Validator를 사용함) / API는 구현체가 반드시 필요함
  - Hibernate Validator
 
-![img_9.png](img_9.png)
+![img_9.png](images/img_9.png)
 
 
 
 
-![img_10.png](img_10.png)
+![img_10.png](images/img_10.png)
 
 
 
-![img_11.png](img_11.png)
+![img_11.png](images/img_11.png)
 validator 인터페이스를 통해서
 
 커맨드 객체
@@ -273,7 +273,7 @@ HttpServletRequest
 @CookieValue 쿠키명과 동일한 변수명
     - 쿠키 개별 조회
     - 특정 변수에 주입, 형변환도 자동
-![img_19.png](img_19.png)
+![img_19.png](images/img_19.png)
 쿠키값을 주입해줌
 
 
@@ -283,7 +283,7 @@ HttpServletRequest
 
 
 
-![img_18.png](img_18.png)
+![img_18.png](images/img_18.png)
    세션 (Session): 세션은 사용자가 웹 애플리케이션에 접속한 시간부터 
 브라우저를 종료하거나 특정 시간 동안 활동이 없을 때까지의 일련의 상호 작용을 
 나타냅니다. 보통 세션은 일정 기간 동안 지속되며, 사용자의 상태를 
@@ -305,16 +305,16 @@ HttpServletRequest
 
 
 
-![img_12.png](img_12.png)
+![img_12.png](images/img_12.png)
 testController > 쿠키가 등록되었따.
 
 
-![img_13.png](img_13.png)
+![img_13.png](images/img_13.png)
 >/cookie1/test2 경로로 들어갔을땐 쿠키가 생성되지 않음
 > 경로가 바뀌면 쿠키가 유지되지 않음
 
 
-![img_14.png](img_14.png)
+![img_14.png](images/img_14.png)
 > 만료시간을 설정함으로써 제어할 수 있음
 > 기본값이 세션으로 입력된 것은 브라우저가 열려있는 동안만 유지가 된다.
 > 즉 만료시간을 설정하지 않으면 기본값 = 브라우저가 열려있는 동안만 유지가 된다.
@@ -322,14 +322,68 @@ testController > 쿠키가 등록되었따.
 > 
 > 
 > 
-![img_15.png](img_15.png)
+![img_15.png](images/img_15.png)
 한국은 +9
 
 
 
-![img_16.png](img_16.png)
+![img_16.png](images/img_16.png)
 
 
 
 >httpOnly : 자바스크립트 document.cookie로 조회가 되지 않음
-![img_17.png](img_17.png)
+![img_17.png](images/img_17.png)
+> 
+> 
+> 
+> 
+### 인터셉터
+![img_20.png](images/img_20.png)
+
+1) HandlerInterceptor 인터페이스
+- boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
+
+- void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception;
+  : 컨트롤러 빈 실 행 후, 응답 실행 전 호출
+  : 컨틀로러 빈 실 행 후 공통적인 처리 
+
+- void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception;
+  : 응답 완료 후 호출
+  : 응답 완료 후 공통적인 정리 작업..
+
+> preHandle 을 가장 많이 사용함 -> 인가에 대한 부분에서 이용
+> postHandle 응답 전에 공통적인 것을 할 때
+
+
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+> 모든 주소에 설정을 추가함
+> 보통 모바일 버전에서 pc버전으로 보고 싶을때... 이러한 설정 정보를 모든 주소에 추가할 때
+
+
+
+@DateTimeFormat
+- LocalDate, LocalTime, LocalDateTime .. - JSR310 - Date & Time API
+
+#### 마이바티스에서는 localdatetune을 사용하려면 추가적인 설정이 필요함
+
+
+
+typeMismatch 
+-> 형식이 일치하지 않으면 예외 발생
+-> 꼭 날짜가 아니어도 발생함....
+
+메세지 코드에 넣어보기
+typeMismatch.java.time.LocalDate
+
+#### 범위를 좁힐 수 있다.
+메세지코드
+메세지코드.필드명
+메세지코드.커맨드객체명.필드명
+메세지코드.자료형 타입
+메세지코드.커맨드객체명.자료형 타입
+
+@PathVariable -> 경로 변수
+변수가 경로안에 있는것
