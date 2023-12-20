@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50439fba-9f74-4624-90bf-5381375a59e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/common/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/DbConfig1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/FileProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/controllers/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/controllers/file/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/models/member/MemberNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/error/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/file/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/DbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/configs/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/controllers/admin/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/java/controllers/admin/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/admin/member/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/admin/member/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3. 스프링/spring_study/exam07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2ZnHFBKjL7He2LhseqoH9OPIvnu" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/dani/4. 스프링부트/exam01"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50439fba-9f74-4624-90bf-5381375a59e3" name="Changes" comment="" />
+      <created>1703050816816</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703050816816</updated>
+    </task>
+    <servers />
+  </component>
+</project>

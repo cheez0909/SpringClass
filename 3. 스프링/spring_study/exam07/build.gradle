@@ -55,7 +55,7 @@ dependencies {
     testCompileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
     testCompileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1'
 
-    implementation 'org.mybatis:mybatis-typehandlers-jsr310:1.0.2'
+   // implementation 'org.mybatis:mybatis-typehandlers-jsr310:1.0.2'
 
 
 

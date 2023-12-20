@@ -8,7 +8,9 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring6.SpringTemplateEngine;
@@ -17,7 +19,7 @@ import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 @Configuration
 @EnableWebMvc // 핸들러매핑, 어댑터등 직접 설정하지 않아도 활성화해준다.
-@Import(DbConfig.class) // db설정파일 import
+@Import(DbConfig1.class) // db설정파일 import
 public class MvcConfig implements WebMvcConfigurer {
 
     @Autowired
@@ -37,6 +39,21 @@ public class MvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
                 .addResourceLocations("classpath:/static/");
+
+        /**
+         * 파일 업로드 시 이미지 파일등 해당 파일을 웹에서도 확인할 수 있도록
+         * 경로를 지정함. 이미지 파일=정적파일
+         * 이미지 파일이 아닐 경우 다운로드됨....
+         */
+        /**
+         * 프로퍼티 파일을 불러와서
+         * 유동적으로 바뀔 수 있도록....?
+         *
+         */
+        registry.addResourceHandler("/upload/**")
+                .addResourceLocations("file:///c:/uploads/");
+        // 이 경로에 접근하도록
+        // "/"를 이스케이프 문자로 인식하기 때문에 3개를 입력해야 2개로 인식함
     }
 
 //    @Override
@@ -157,5 +174,17 @@ public class MvcConfig implements WebMvcConfigurer {
     @Bean
     public CommonInterceptor commonInterceptor(){
         return new CommonInterceptor();
+    }
+
+    /**
+     * 프로퍼티 파일을 빈으로 등록
+     * PropertySources -> 프로퍼티에서 가져오는 설정이다
+     * Placeholder -> 교체 방식, 설정 방식 : 위치를 치환하는 방식
+     */
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer configurer(){
+        PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
+        conf.setLocation(new ClassPathResource("application.properties"));
+        return conf;
     }
 }

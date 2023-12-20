@@ -3,6 +3,7 @@
       layout:decorate="~{layouts/common}">
 <main layout:fragment="content">
     <h1 th:text="#{회원목록}"></h1>
+
     <form method="get" th:action="@{/admin/member}" th:object="${memberSearch}">
         <input type="text" name="sdate" th:field="*{sdate}">
         <span th:each="err : ${#fields.errors('sdate')}" th:text="${err}"></span>
@@ -11,5 +12,21 @@
         <span th:each="err : ${#fields.errors('edate')}" th:text="${err}"></span>
         <button type="submit" th:text="#{조회하기}"></button>
     </form>
+    <TABLE border="1">
+        <thead>
+        <tr>
+            <th th:text="#{순번}"></th>
+            <th th:text="#{아이디}"></th>
+            <th th:text="#{회원명}"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="member, status : ${members}" th:object="${member}">
+            <td th:text="${status.count}"></td>
+            <td th:text="*{userId}"></td>
+            <td th:text="*{userName}"></td>
+        </tr>
+        </tbody>
+    </TABLE>
 </main>
 </html>

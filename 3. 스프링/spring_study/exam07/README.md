@@ -387,3 +387,54 @@ typeMismatch.java.time.LocalDate
 
 @PathVariable -> 경로 변수
 변수가 경로안에 있는것
+
+
+![img_3.png](img_3.png)
+1개당 최대 용량 / 전체 용량
+kbyte - 1024byte
+1mb - 1024 kbyte
+
+
+### 스프링 파일 업로드
+
+- <form> 속성 :  `enctype="multipart/form-data"`
+위 속성이 없으면 키와 값 형태로 전송됨 (문자열 : (일반텍스트형식으로 전달됨))![img_4.png](img_4.png)
+> 속성을 추가하면 헤더값이 바뀌어 있음
+![img_5.png](img_5.png)![img_6.png](img_6.png)![img_7.png](img_7.png)
+
+파트를 나누어서.. 이쪽은 일반양식데이터(일반텍스트형식으로 전달됨) 이쪽은 파일데이터(바이너리데이터) 이런식으로 나누기 때문에 멀티파트라고함<br>
+
+commons-io :  I/O 작업을 쉽게 다룰 수 있는 라이브러리로, 파일 복사, 삭제, 이동 등 다양한 파일 관련 작업을 지원
+commons-fileupload : HTTP 요청에서 멀티파트 파일을 추출하는 데 사용됩니다.
+
+#### MultipartFile 인터페이스 
+
+![img_8.png](img_8.png)
+
+getOriginalFilename() 
+-> 서버에 올릴때는 다른 파일이름으로 올리고 다운 받을때는 원래 파일 명으로
+-> why? 서버에는 파일이름이 동일한 파일이 여러개 있을 수 있음
+-> DB에 파일 정보를 입력해놓음..
+
+
+비동기방식 추가가됨 자바 io
+
+만약에 이미지 파일을 올렸을때 웹에서 이미지가 보이도록
+서버쪽에 접근이 가능하도록 설정해야함
+
+> addResourceHandlers 설정
+
+<br>
+<br>
+
+#### 프로필
+@Profile
+
+        /**
+         * 배포 시에 DB연결 설정을 분리함 -> profile
+         * -> 배포 시엔 ~Bean
+         * -> 개발 시엔 **Bean
+         * 따로 만들 수 있음
+         */
+
+@Value

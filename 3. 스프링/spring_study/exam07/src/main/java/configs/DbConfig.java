@@ -4,6 +4,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -17,14 +18,24 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class DbConfig {
 
+    // 프로퍼티에 입력된 값을 불러온다
+    // @Value 애너테이션
+    @Value("${db.username}")
+    private String username;
+    @Value("${db.password}")
+    private String password;
+
     @Bean(destroyMethod = "close")
     public DataSource dataSource(){
         DataSource ds = new DataSource();
-        /* 연결 설정 */
+
+        /* 연결 설정 : 로컬 DB */
         ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         ds.setUrl("jdbc:oracle:thin:@localhost:1521:orcl");
-        ds.setUsername("spring6");
-        ds.setPassword("_aA123456");
+        // ds.setUsername("spring6");
+        ds.setUsername(username);
+        //ds.setPassword("_aA123456");
+        ds.setPassword(password);
 
         /* 커넥션 풀 설정 */
         ds.setInitialSize(2); // 2개 설정

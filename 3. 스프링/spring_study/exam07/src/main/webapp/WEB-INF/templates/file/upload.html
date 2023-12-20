@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layouts/common}">
+<main layout:fragment="content">
+    <!--`multiple` 은 파일 여러개-->
+    <form method="post" th:action="@{/file/upload}" enctype="multipart/form-data">
+        제목 : <input type="text" name="subject" > <br>
+        <input type="file" name="file" multiple>
+        <button type="submit">전송하기</button>
+    </form>
+</main>
+</html>

@@ -16,18 +16,21 @@
     </select>
     <!--메서드 이름 / 반환값-->
     <select id="getList" resultType="models.member.Member">
-        <!--<![CDATA[ 내용 ]] 이 있어야 쿼리 내의 꺽쇄괄호를 데이터로 인식하지 않음-->
-        <![CDATA[
+        <!--<![CDATA[ 내용 ]] 이 있어야 쿼리 내의 꺽쇠괄호를 데이터로 인식하지 않음-->
+
         SELECT * FROM MEMBER
         <where>
             <if test="sdate != null">
+        <![CDATA[
                 REG_DT >= #{sdate}
+                 ]]>
             </if>
             <if test="edate != null">
-                REG_DT < #{edate}
+                <![CDATA[
+                AND REG_DT < #{edate}
+                 ]]>
             </if>
         </where>
         ORDER BY REG_DT DESC
-        ]]>
     </select>
 </mapper>
