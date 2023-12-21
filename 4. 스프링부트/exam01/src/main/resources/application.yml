@@ -1,0 +1,49 @@
+server:
+  port: 3000
+
+spring:
+  # 프로필 설정(나만 사용하는 파일/ 공유파일이 x / 개발환경다를떄)
+  #  profile:
+  #    active: dev
+
+  # 파일 업로드 설정
+  servlet:
+    multipart:
+      maxFileSize: 20MB
+      maxRequestSize: 60MB
+
+  # 정적 자원 설정(CSS, JS, 이미지)
+  web:
+    resources:
+      staticLocations: file:src/main/resources/static/
+
+  # 데이터베이스 설정
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: spring6
+    password: _aA123456
+
+  # 라이브 리로드 설정
+  devtools:
+    livereload:
+      enabled: true
+
+  # 타임리프 설정
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+
+file:
+  url: /upload/
+  path: c:/uploads/
+  # 파일 설정
+
+
+
+# jdbc를 트레이스 레벨에서 로그 확인한다.
+logging:
+  level:
+    org:
+      springframework:
+        jdbc: trace
