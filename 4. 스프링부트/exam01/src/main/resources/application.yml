@@ -3,7 +3,7 @@ server:
 
 spring:
   # 프로필 설정(나만 사용하는 파일/ 공유파일이 x / 개발환경다를떄)
-#  profile:
+#  profiles:
 #    active: dev
 
   # 파일 업로드 설정

@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f313cc-967d-4496-95e5-6270d0ec7aa9" name="Changes" comment="12월 11일 수업">
-      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/scheduling/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/scheduling/Stat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/commons/MemberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/configs/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-test.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +65,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam06",
+    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam05",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

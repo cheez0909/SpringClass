@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f47b1da0-0ebb-4f72-a8c1-2c73c2e1112b" name="Changes" comment="12월 8일 - 수업1" />
+    <list default="true" id="f47b1da0-0ebb-4f72-a8c1-2c73c2e1112b" name="Changes" comment="12월 8일 - 수업1">
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/commons/MemberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/configs/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application-test.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,15 +59,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;reply&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/dani/3. 스프링/spring_study/exam05/src/main/java/aop&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam04",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dani\3. 스프링\spring_study\exam05\src\main\java\aop" />
