@@ -2,6 +2,7 @@ package org.choongang.entites;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 import org.choongang.commons.MemberType;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -10,21 +11,26 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
-@Table(name = "USERS",
-        indexes = @Index(name = "idx_member_createdAt", columnList = "createdAt Desc"))
-// @EntityListeners(AuditingEntityListener.class) //@LastModifiedDate, @CreatedDate를 위해 설정
+//@Table(name = "USERS",
+//        indexes = @Index(name = "idx_member_createdAt", columnList = "createdAt Desc"))
+@EntityListeners(AuditingEntityListener.class) //@LastModifiedDate, @CreatedDate를 위해 설정
 public class Member extends Base{
     @Id @GeneratedValue
     private Long seq;
+
     @Column(length = 80, unique = true, nullable = false)
     private String email;
+
     @Column(length = 40, nullable = false)
     private String name;
-    @Column(length = 65, name = "userPw", nullable = false)
+
+    @Column(length = 65, nullable = false)
     private String password;
 
     /**
@@ -39,8 +45,8 @@ public class Member extends Base{
     // private LocalDateTime modifiedAt;
 
     // @Lob // CLOB
-    @Transient // 엔티티 내부에서만 사용
-    private String introduction;
+//    @Transient // 엔티티 내부에서만 사용
+//    private String introduction;
 
     @Enumerated(EnumType.STRING) // EnumType.ORDINAL : 상수의 위치 번호
     @Column(length = 10)
@@ -48,4 +54,15 @@ public class Member extends Base{
 
     // @Temporal(TemporalType.DATE) // DATE, TIME, TIMESTAMP
     // public Date dt;
+
+
+    // 하나의 회원이 여러개의 게시글
+    // boardData쪽에 있는 멤버
+    @ToString.Exclude
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+    private List<BoardData> boardData = new ArrayList<>();
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "addrNo") // 외래키의 필드명으로 추가됨
+    private Address address;
 }
