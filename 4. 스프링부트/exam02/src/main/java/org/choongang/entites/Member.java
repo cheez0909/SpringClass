@@ -59,7 +59,8 @@ public class Member extends Base{
     // 하나의 회원이 여러개의 게시글
     // boardData쪽에 있는 멤버
     @ToString.Exclude
-    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY,
+            cascade = CascadeType.REMOVE)
     private List<BoardData> boardData = new ArrayList<>();
 
     @OneToOne(fetch = FetchType.LAZY)

@@ -22,7 +22,7 @@ import java.util.Optional;
 
 
 @SpringBootTest
-// @Transactional
+@Transactional
 @TestPropertySource(properties = "spring.profiles.active=test")
 // @TestPropertySource(properties = "spring.profiles.active=default")
 public class test7 {
@@ -30,6 +30,10 @@ public class test7 {
     private AddressRepository addressRepository;
     @Autowired
     private MemberRepository memberRepository;
+
+    @PersistenceContext
+    private EntityManager em;
+
     @BeforeEach
     void init(){
         Address address = new Address();
@@ -44,6 +48,8 @@ public class test7 {
         member.setPassword("123456");
         member.setAddress(address);
         memberRepository.saveAndFlush(member);
+
+        em.clear();
     }
     @Test
     void Test(){

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94f313cc-967d-4496-95e5-6270d0ec7aa9" name="Changes" comment="12월 11일 수업" />
+    <list default="true" id="94f313cc-967d-4496-95e5-6270d0ec7aa9" name="Changes" comment="12월 11일 수업">
+      <change afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/java/org/choongang/entites/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/test/java/org/choongang/test/test8.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

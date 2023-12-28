@@ -1,5 +1,7 @@
 package org.choongang.test;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.choongang.entites.BoardData;
 import org.choongang.entites.HashTag;
 import org.choongang.repository.BoardDataRepository;
@@ -14,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-// @Transactional
+@Transactional
 @SpringBootTest
 @TestPropertySource(properties = "spring.profiles.active=test")
 public class test8 {
@@ -23,6 +25,9 @@ public class test8 {
     private BoardDataRepository boardDataRepository;
     @Autowired
     private HashTagRepository hashTagRepository;
+
+    @PersistenceContext
+    private EntityManager em;
 
     @BeforeEach
     void init(){
@@ -48,11 +53,17 @@ public class test8 {
         }
 
         boardDataRepository.saveAllAndFlush(items);
+        // 영속성 컨텍스트 안에 있음
+        // 영속성 안에 있으면 쿼리를 하지 않음
 
+        em.clear(); // 영속성 비우기
     }
 
     @Test
     void Test1(){
+        // em.clear()를 하지 않으면
+        // 쿼리문을 보내지 않음
+
         BoardData item = boardDataRepository.findById(1L).orElse(null);
         List<HashTag> tags = item.getTags();
         System.out.println(tags);
