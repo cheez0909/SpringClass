@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .menus > div:nth-of-type(3n+1) {
+            background: red;
+        }
+
+        .menus > div:nth-of-type(3n+2) {
+            background: green;
+        }
+
+        .menus > div:nth-of-type(3n) {
+            background: blue;
+        }
+
+        .menus {
+            display: flex;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .menus1 > div {
+            width: 300px;
+        }
+
+        .menus1 {
+            flex-wrap: wrap;
+        }
+
+        .menus2 {
+            align-items: flex-start;
+        }
+
+        .menus3 {
+            align-items: flex-end;
+        }
+
+        .menus4 {
+            align-items: center;
+        }
+
+    </style>
+    <h1>flex-start: wrap;</h1>
+    <div class="menus menus1">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+    <br>
+
+    <h1>flex-start</h1>
+    <div class="menus menus2">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="menus menus3">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="menus menus4">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+</body>
+</html>

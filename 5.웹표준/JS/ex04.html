@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById("button");
+            btn.addEventListener("click", function(e){
+                console.log("e.currentTarget", e.currentTarget); // <div id="button"> ~ </div>
+                // 이벤트가 바인딩 되어있는 요소
+                console.log("e.target",e.target); // <span>클릭!</span>
+                // 실제 이벤트가 발생한 요소
+                // 타겟은 중첩되어있을 때 바뀔 가능성이 있음
+                console.log("this", this);
+            });
+        });
+    </script>
+    <div id="button">
+        <span data-name="버튼">클릭!</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .menus > div:nth-of-type(3n+1) {
+            background: red;
+        }
+
+        .menus > div:nth-of-type(3n+2) {
+            background: green;
+        }
+
+        .menus > div:nth-of-type(3n) {
+            background: blue;
+        }
+        .menus {
+            display: flex;
+            
+        }
+
+        .menus2 {
+            justify-content: space-between;
+        }
+
+        .menus3 {
+            justify-content: space-around;
+        }
+
+        .menus4 {
+            justify-content: space-evenly;
+        }
+    </style>
+    <div class="menus menus1">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+    <h1>space-between</h1>
+    <div class="menus menus2">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+    <h1>space-around</h1>
+    <div class="menus menus3">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+    <h1>space-evenly</h1>
+    <div class="menus menus4">
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+
+</body>
+</html>

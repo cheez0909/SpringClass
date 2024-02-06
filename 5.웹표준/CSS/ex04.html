@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        a, h1, div {
+            color:green;
+        }
+
+        /* 체크된 상태에서 바로 인접해 있는 요소 선택 */
+        input[type="checkbox"]:checked + label{
+            color: red;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: all 0.5s;
+        }
+
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+    </style>
+    <a href="https://www.naver.com">네이버</a>
+    <h1>제목1</h1>
+    <div>내용...</div>
+    <input type="checkbox" id="checkbox1">
+    <label for="checkbox">체크</label>
+    <input type="checkbox" id="checkbox2">
+    <label for="checkbox">체크2</label>
+
+    <div class="box"></div>
+</body>
+</html>

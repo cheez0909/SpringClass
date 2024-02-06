@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const btn = document.getElementById("button");
+            btn.addEventListener("mouseenter", function(e) {
+                console.log(e);
+                console.log("mouseenter");
+            });
+        
+            btn.addEventListener("mouseleave", function(e){
+                console.log(e);
+                console.log("mouseleave");
+            });
+
+            const text = document.getElementById("text");
+            text.addEventListener("keyup", function(e){
+                console.log(e);
+                console.log("keyup")
+            });
+            
+        });
+
+    </script>
+    <button type="button" id="button">확인</button>
+    <input type="text" id="text" />
+</body>
+</html>

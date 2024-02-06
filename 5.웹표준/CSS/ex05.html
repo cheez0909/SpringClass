@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* li:first-child{
+            background: red;
+        }
+        li:last-child{
+            background: blue;
+        } */
+        /* li:nth-child(1), 
+        li:nth-child(3),
+        li:nth-child(5),
+        li:nth-child(7),
+        li:nth-child(9) {
+            background: gray;
+        } */
+/* 
+        li:nth-child(3n+1){
+            background: gray;
+        }
+        li:nth-of-type(3n+2){
+            background: blue;
+        }
+        li:first-of-type{
+            background: black;
+        }
+        li:last-of-type{
+            background: red;
+        } */
+
+        li:not(.menu5){
+            background: yellow;
+        }
+
+        ul:before{
+            content: '';
+            height: 50px;
+            background: orange;
+            display: block;
+        }
+        ul:after{
+            content: 'after';
+        }
+    </style>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li class="menu5">메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+    </ul>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+    </ul>
+</body>
+</html>

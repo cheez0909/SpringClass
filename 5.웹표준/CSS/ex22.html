@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .menus > div:nth-of-type(3n+1) {
+            background: red;
+            width: 0;
+            flex-grow: 1;
+
+        }
+        .menus > div:nth-of-type(3n+2) {
+            background: green;
+            width: 0;
+            flex-grow: 1;
+ 
+        }
+        .menus > div:nth-of-type(3n) {
+            background: blue;
+            width: 0;
+            flex-grow: 1;
+        }
+        .menus {
+            display: flex;
+            height: 100px;
+            border: 1px solid black;
+        }
+       
+    </style>
+
+    <div class="menus">
+        <div>메뉴1</div>
+        <div>메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2메뉴2</div>
+        <div>메뉴3</div>
+    </div>
+
+</body>
+</html>
