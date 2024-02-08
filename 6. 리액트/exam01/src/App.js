@@ -1,7 +1,22 @@
-import Posts from './components/Posts';
+import LifeCycle from './components/LifeCycle';
+import { useState } from 'react';
 
 const App = () => {
-  return <Posts />;
+  const [color, setColor] = useState('black');
+  return (
+    <>
+      <LifeCycle color={color} />
+      <button type="button" onClick={() => setColor('red')}>
+        red
+      </button>
+      <button type="button" onClick={() => setColor('blue')}>
+        blue
+      </button>
+      <button type="button" onClick={() => setColor('orange')}>
+        orange
+      </button>
+    </>
+  );
 };
 
 export default App;
