@@ -1,7 +1,7 @@
-import Color from './components/Color';
+import Average from './components/Average';
 
 const App = () => {
-  return <Color></Color>;
+  return <Average></Average>;
 };
 
 export default App;
