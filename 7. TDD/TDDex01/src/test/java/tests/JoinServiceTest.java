@@ -1,24 +1,53 @@
 package tests;
 
+import jakarta.servlet.http.HttpServletRequest;
 import member.controllers.JoinValidator;
 import member.controllers.Member;
 import member.service.BadRequestException;
 import member.service.JoinService;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.exceptions.base.MockitoException;
 
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.BDDMockito.given;
+
+import org.mockito.junit.jupiter.MockitoExtension;
 
 @DisplayName("회원가입 테스트")
+@ExtendWith(MockitoExtension.class)
 public class JoinServiceTest {
 
     private JoinService joinService;
+
+    @Mock
+    private HttpServletRequest request;
 
     // 각 테스트 실행 전 호출
     // 초기자원을 정리할 떄 많이 사용
     @BeforeEach
     void init(){
         joinService = new JoinService(new JoinValidator());
+
+        Member member = getMember();
+
+//        request = mock(HttpServletRequest.class); // 가짜 객체를 만들어주어야함
+
+        given(request.getParameter("userId")) // 매개변수가 이거 일때
+                .willReturn(member.getUserId()); // 이 것을 반환
+
+        given(request.getParameter("userPw"))
+                .willReturn(member.getUserPw());
+
+        given(request.getParameter("confirmPw"))
+                .willReturn(member.getConfirmPw());
+
+        given(request.getParameter("userNm"))
+                .willReturn(member.getUserNm());
     }
 
     private Member getMember(){
@@ -53,6 +82,15 @@ public class JoinServiceTest {
         Member member = new Member();
         assertDoesNotThrow(()->{joinService.join(getMember());});
     }
+
+    @Test
+    @DisplayName("회원가입 성공 테스트 - 요청 데이터")
+    void joinSuccessWithRequest(){
+        assertDoesNotThrow(()-> {
+            joinService.join(request);
+        });
+    }
+
     @Test // @Disabled
     @DisplayName("필수 입력항목(userId, userPw, confirmPw, userNm) 검증, 실패 시 BadRequestException")
     void requiredField(){
@@ -96,4 +134,39 @@ public class JoinServiceTest {
                     assertTrue(message.contains(keyword));}
         );
     }
+
+    @Test
+    void test1(){
+        int num1 = 10;
+        assertEquals(num1, 10);
+    }
+
+    @Test
+    void test2(){
+        boolean active = true;
+        assertTrue(active);
+    }
+
+    @Test
+    void test3(){
+        String str = null;
+        assertThrows(RuntimeException.class, ()->{
+            if(str==null){
+                throw new RuntimeException();
+            }
+        });
+    }
+
+    @Test
+    void test4(){
+        String str = "안녕하세요";
+        assertDoesNotThrow(()->{
+            if(str==null){
+                throw new RuntimeException();
+            }
+        });
+    }
+
+
+
 }

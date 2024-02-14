@@ -3,6 +3,10 @@
     &:hover{
         background: blue;
     }
+
+    &.on {
+        border: 2px solid black;
+    }
 }
 
 /* 타이틀이라는 클래스명이 그대로 유지가 됨 -> :global을 붙였을 때 */

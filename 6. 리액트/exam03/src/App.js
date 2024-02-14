@@ -1,8 +1,9 @@
-import CSSModule from './components/CSSModule';
+import LoginForm from './components/LoginForm';
+
 const App = () => {
   return (
     <>
-      <CSSModule name="메롱"></CSSModule>
+      <LoginForm></LoginForm>
     </>
   );
 };
