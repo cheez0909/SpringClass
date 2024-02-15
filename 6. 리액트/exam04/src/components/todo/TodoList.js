@@ -16,13 +16,17 @@ const TodoBox = styled.ul`
   }
 `;
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, onDoubleClick }) => {
   return (
     <>
       <h1>투두리스트</h1>
       <TodoBox>
         {todos && todos.length > 0 ? (
-          todos.map((todo) => <li key={todo.id}>{todo.title}</li>)
+          todos.map((todo) => (
+            <li key={todo.id} onDoubleClick={() => onDoubleClick(todo.id)}>
+              {todo.title}
+            </li>
+          ))
         ) : (
           <li>할일을 등록하세요.</li>
         )}

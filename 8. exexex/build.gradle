@@ -1,0 +1,63 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def spring_version = '6.1.1';
+    implementation 'org.json:json:20240205'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
+    implementation "org.springframework:spring-webmvc:$spring_version"
+    compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1'
+
+    runtimeOnly 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
+    implementation 'com.oracle.database.nls:orai18n:23.3.0.23.09'
+
+    implementation "org.springframework:spring-jdbc:$spring_version"
+    implementation 'org.apache.tomcat:tomcat-jdbc:10.1.16'
+
+    implementation 'org.mybatis:mybatis:3.5.14'
+    implementation 'org.mybatis:mybatis-spring:3.0.3'
+
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'ch.qos.logback:logback-classic:1.4.14'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testImplementation platform('org.junit:junit-bom:5.10.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE'
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.3.0'
+
+    // 자바에서 지원하는 검증 api
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+
+    // 구현체
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+
+    // 스프링 테스트
+    testImplementation "org.springframework:spring-test:$spring_version"
+
+    // bcrypt : 비밀번호 해시
+    implementation 'org.mindrot:jbcrypt:0.4'
+
+
+    testCompileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    testCompileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}

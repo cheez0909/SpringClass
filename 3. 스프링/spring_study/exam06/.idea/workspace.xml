@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f313cc-967d-4496-95e5-6270d0ec7aa9" name="Changes" comment="12월 11일 수업">
-      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +72,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam04",
+    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam07",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

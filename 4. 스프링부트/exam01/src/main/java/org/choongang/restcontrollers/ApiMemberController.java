@@ -145,6 +145,11 @@ public class ApiMemberController {
         return member;
     }
 
+    @GetMapping("/s")
+    public String list1(){
+        return "안녕";
+    }
+
     @GetMapping("/list")
     public List<Member> list(){
         List<Member> members = IntStream.rangeClosed(1, 10)

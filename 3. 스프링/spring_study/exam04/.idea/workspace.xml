@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5340da30-bdeb-408d-a272-c1b3ae12228c" name="Changes" comment="12월 28일 JPA 끝">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam05/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../exam05/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam07",
+    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam05",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",

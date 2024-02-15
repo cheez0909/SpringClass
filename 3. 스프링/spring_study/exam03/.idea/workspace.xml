@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="799b57c9-9bf2-4831-b48d-f78015b263ae" name="Changes" comment="12월 13일">
+      <change beforePath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +28,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="exam03" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,15 +80,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;reply&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/Enums&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/dani/3. 스프링/spring_study/exam04",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dani\3. 스프링\spring_study\exam03\src\main" />
@@ -71,6 +101,13 @@
       <recent name="main" />
       <recent name="config" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-f66d43ae" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

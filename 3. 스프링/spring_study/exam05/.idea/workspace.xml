@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f47b1da0-0ebb-4f72-a8c1-2c73c2e1112b" name="Changes" comment="12월 8일 - 수업1">
+      <change beforePath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam02/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/java/org/choongang/restcontrollers/ApiMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4. 스프링부트/exam01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/components/todo/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/containers/todo/TodoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6. 리액트/exam04/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +40,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="exam05" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -69,6 +91,13 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="config" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-f66d43ae" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
