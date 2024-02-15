@@ -28,12 +28,8 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Bean
     public RestTemplate restTemplate() {
-        RestTemplate restTemplate = new RestTemplate();
 
-        // JSON 변환을 위해 MappingJackson2HttpMessageConverter 추가
-        restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-
-        return restTemplate;
+        return new RestTemplate();
     }
 
 
