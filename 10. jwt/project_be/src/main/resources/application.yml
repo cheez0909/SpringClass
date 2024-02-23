@@ -33,3 +33,7 @@ jwt:
   header: Authorization # 명칭에 대한이름 -> 이 이름으로 토큰을 보내게 됨
   secret: ${jwt.secret} # base64 인코딩
   accessTokenValidityInSeconds: 3600 # 60 min
+
+
+cors:
+  origin: ${cors.origin}

@@ -1,4 +1,4 @@
-package com.choongang.member.service;
+package com.choongang.member.services;
 
 import com.choongang.member.constants.Authority;
 import com.choongang.member.controllers.RequestJoin;
@@ -25,6 +25,7 @@ public class MemberSaveService {
                 .locked(false)
                 .enable(true)
                 .authority(Authority.USER).build();
+        save(member);
     }
 
 

@@ -15,19 +15,22 @@ public class CommonException extends RuntimeException {
     private HttpStatus status;
     private Map<String, List<String>> messages; // 에러메세지가 나올 경우 가공해서 넣기
 
+    @Getter
+    private Errors errors;
+
     public CommonException(String message){
         this(message, HttpStatus.INTERNAL_SERVER_ERROR);
     }
     public CommonException(String message, HttpStatus status){
-        super(message.toString());
+        super(message);
         this.status = status;
     }
 
     /* 커맨드객체에서 에러가 발생할 수 있음 */
     public CommonException(Errors errors, HttpStatus status){
         this.status = status;
-
+        this.errors = errors;
         /* 커맨드 객체 검증 실패 -> Map<String, List<String>> -> messages */
-
     }
+
 }

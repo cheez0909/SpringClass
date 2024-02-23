@@ -1,4 +1,4 @@
-package com.choongang.member.service;
+package com.choongang.member.services;
 
 import com.choongang.member.entities.Member;
 import lombok.Builder;

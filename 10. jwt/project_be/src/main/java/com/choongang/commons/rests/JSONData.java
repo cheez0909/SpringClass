@@ -14,7 +14,7 @@ public class JSONData {
     private boolean success = true;
     private HttpStatus status = HttpStatus.OK;
 
-    private Object messagae; // 실패시엔 메세지
+    private Object messages; // 실패시엔 메세지
 
     @Nonnull
     private Object data; // 성공시엔 데이터

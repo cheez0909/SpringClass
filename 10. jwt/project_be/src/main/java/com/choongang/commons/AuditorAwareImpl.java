@@ -1,6 +1,6 @@
 package com.choongang.commons;
 
-import com.choongang.member.service.MemberInfo;
+import com.choongang.member.services.MemberInfo;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
